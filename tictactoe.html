@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tictactoe.css">
+    <script src="tictactoe.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Tictactoe</title>
+</head>
+<body>
+    <h1 id="name">TIC TAC TOE X-O</h1>
+    <h2 id="score">You: 0 vs Bot: 0</h2>
+    <form>
+        Difficulty:
+        <select id="difficulty">
+            <option value="1">Easy</option>
+            <option value="2">Medium</option>
+            <option value="3">Hard</option>
+        </select>
+    </form>
+
+    <p id="comment">In-game processing...</p>
+    <div class="container">
+        <div id="1" onclick="me(1)"></div>
+        <div id="2" onclick="me(2)"></div>
+        <div id="3" onclick="me(3)"></div>
+        <div id="4" onclick="me(4)"></div>
+        <div id="5" onclick="me(5)"></div>
+        <div id="6" onclick="me(6)"></div>
+        <div id="7" onclick="me(7)"></div>
+        <div id="8" onclick="me(8)"></div>
+        <div id="9" onclick="me(9)"></div>
+    </div>
+    <br>
+    <button id="restart" onclick="restart()">START AGAIN</button>
+</body>
+</html>
